@@ -1,2 +1,2 @@
 #!/bin/bash
-mv . [:superior:] /tmp/u 
+find . mv . [:upper:] /tmp/u 
