@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod chown vincent chgrp staff
+chown vincent root chgrp root staff
