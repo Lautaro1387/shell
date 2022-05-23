@@ -1,2 +1,2 @@
 #!/bin/bash
-setuid vincent root setgid root staff *
+chown -c vincent root chgrp -c root staff *
