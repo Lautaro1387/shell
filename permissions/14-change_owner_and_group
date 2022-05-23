@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent root chgrp root staff
+chown vincent root chgrp root staff /shell/permissions
