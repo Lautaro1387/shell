@@ -1,2 +1,2 @@
 #!/bin/bash
-find . | wc -l /shell/io_redirections_and_filters
+find . -type f | wc -l .
