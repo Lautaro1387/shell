@@ -1,2 +1,2 @@
 #!/bin/bash
-cat "One line, one word" | sort -t | cat "One line, one word"
+cat "One line, one word" | sort -t | echo "One line, one word"
