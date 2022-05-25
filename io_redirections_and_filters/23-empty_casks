@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name -type -empty 
+find . -name -type f -empty 
