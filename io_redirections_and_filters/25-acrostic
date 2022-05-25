@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c '1' | tr '[:space:]' '[:lower:]' prueba
+cut -c '1' | tr '[:space:]' | tr '[:lower:]' prueba
