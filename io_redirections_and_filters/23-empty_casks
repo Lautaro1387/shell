@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name -follow "*"
+find . -name -type f, d
