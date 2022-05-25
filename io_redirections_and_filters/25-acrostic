@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -cz '1' prueba 
+cut -c '1' prueba | tr [:space:]
