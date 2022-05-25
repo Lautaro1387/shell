@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -z '[[:alpha:]]' /etc/ssh/sshd_config
+grep -vz '[[:alpha:]]' /etc/ssh/sshd_config
