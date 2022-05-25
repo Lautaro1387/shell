@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c '1' prueba | sort 
+cut -cz '1' prueba 
