@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "OLDPWD /action"
+mv /action OLDPWD
