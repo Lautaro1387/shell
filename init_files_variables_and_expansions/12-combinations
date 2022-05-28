@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{a..z} | sort -b | tr '\n' 
+echo {a..z}{a..z} | sort -b | cut -d 'oo' '\n'
