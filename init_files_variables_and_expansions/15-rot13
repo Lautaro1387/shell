@@ -1,2 +1,2 @@
 #!/bin/bash
-echo --decode rot13
+echo " " | rot13
