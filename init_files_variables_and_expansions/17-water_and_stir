@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%u" | sum=$(($WATER + $STIR)) | echo $sum | printf "%o"
+printf "%o\n" | $[$((5#$WATER) + (5#$STIR))]
