@@ -1,2 +1,2 @@
 #!/bin/bash
-paste | sort -b | tr ' ' '\n'
+paste | sort -b | tr ' ' '\n' | head -n 2
