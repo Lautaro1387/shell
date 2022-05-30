@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#  Write a Bash script that loops from 1 to 10 and: displays bad luck for the 4th loop iteration, displays good luck for the 8th loop iteration and displays Best School for the other iterations.
+x=10; while [ $x -gt 0 ]; do  x=$((x-1)); if [ $x -eq 6 ]; then echo "bad luck"; elif [ $x -eq 2 ]; then echo "good luck"; else [ $x -gt 0 ]; echo "Best School"; fi done
