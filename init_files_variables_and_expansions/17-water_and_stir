@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%o\n" | $[$((5#$WATER) + (5#$STIR))]
+printf "%o\n" | $[$(($water#$WATER) + ($stir#$STIR))]
