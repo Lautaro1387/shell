@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Repeat 10 times with until
+x=1; until [ $x -gt 10 ]; do echo "Best School"; x=$(( x+1 )); done
