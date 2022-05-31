@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 hora=0
-while [ $hora -lt 12 ]
+while [ $hora -lt 13 ]
 do
 	echo "Hour: $hora"
 	min=1
