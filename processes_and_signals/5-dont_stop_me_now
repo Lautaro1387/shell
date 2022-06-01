@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #
-kill -9 -o 8671
+kill 8728
