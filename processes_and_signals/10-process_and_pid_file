@@ -7,5 +7,4 @@ trap "rm /var/run/myscript.pid" SIGQUIT
 while true
 do
 	echo To infinity and beyond
-	sleep 2
 done
