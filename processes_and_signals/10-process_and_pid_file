@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-ps  
+echo "ps" > /var/run/myscript.pid 
 trap "echo I hate the kill comand" SIGTERM
 trap "echo Y U no love me?!" SIGINT
 while true
