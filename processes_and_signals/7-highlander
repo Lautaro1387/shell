@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 #
-sig=pkill -15 -f 67-stop_me_if_you_can
+trap 'echo I am invincible!!!; exit' SIGTERM SIGINT
 while true
 do
 echo "To inifinity and beyond"
 sleep 2 
-if
-  $sing
-  echo "I am invicible!!!"
-fi
 done
