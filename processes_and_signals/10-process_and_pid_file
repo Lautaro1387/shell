@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#
+ps  
+trap "echo I hate the kill comand" SIGTERM
+trap "echo Y U no love me?!" SIGINT
+while true
+do
+	echo To infinity and beyond
+	sleep 2
+done
