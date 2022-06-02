@@ -1,20 +1,21 @@
 #!/usr/bin/env bash
 #
 play=1
+ruta=/var/run/my_process.pid
 case $play in
 start)
 ./manage_my_process &
-echo "$!" > /var/run/my_process.pid
+echo "$!" > "$ruta"
 echo "manage_my_process started" ;;
 stop)
 sudo pkill -f "./manage_my_process"
- rm "/var/run/my_process.pid"
+ rm "$ruta"
 echo manage_my_process stopped ;;
 restart)
 sudo pkill -f "./manage_my_process"
-rm  "/var/run/my_process.pid"
+rm  "$ruta"
 ./manage_my_process &
-echo "ps" > /var/run/my_process.pid	       
+echo "$!" > "$ruta"
 echo "manage_my_process restarted" ;;
 *)
 echo "Usage: manage_my_process {start|stop|restart}" ;;
