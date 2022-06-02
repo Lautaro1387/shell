@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #
-play=1
 ruta=/var/run/my_process.pid
-case $play in
+case $1 in
 start)
 ./manage_my_process &
 echo "$!" > "$ruta"
