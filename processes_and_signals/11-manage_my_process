@@ -1,24 +1,21 @@
 #!/usr/bin/env bash
 #
 play=1
-while true
-do
 case $play in
 start)
-sudo ./manage_my_process &
-echo "ps" > /var/run/my_process.pid
+./manage_my_process &
+echo "$!" > /var/run/my_process.pid
 echo "manage_my_process started" ;;
 stop)
-pkill -f "manage_my_process"
- rm /var/run/my_process.pid
+sudo pkill -f "./manage_my_process"
+ rm "/var/run/my_process.pid"
 echo manage_my_process stopped ;;
 restart)
-pkill -f "manage_my_process"
-rm  /var/run/my_process.pid
-sudo ./manage_my_process &
+sudo pkill -f "./manage_my_process"
+rm  "/var/run/my_process.pid"
+./manage_my_process &
 echo "ps" > /var/run/my_process.pid	       
 echo "manage_my_process restarted" ;;
 *)
 echo "Usage: manage_my_process {start|stop|restart}" ;;
 esac
-done
